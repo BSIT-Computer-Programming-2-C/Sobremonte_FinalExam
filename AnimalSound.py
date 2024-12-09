@@ -7,14 +7,17 @@ class Animal(ABC):
 
 class Dog(Animal):
     def makeSound(self):
+        "Implement the makeSound method for Dog."
         return "Woof!"
 
 class Cat(Animal):
     def makeSound(self):
+        "Implement the makeSound method for Cat."
         return "Meow!"
 
 # Demonstrating polymorphism
 def animal_sound(animal):
+    "Takes an Animal object and print its sound."
     print(animal.makeSound())
 
 # Creating instances of Dog and Cat
